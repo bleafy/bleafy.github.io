@@ -8,69 +8,66 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #121212;
+            color: #fff;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
             position: relative;
         }
-        
-        .icon-container {
-            text-align: center;
-            position: fixed;
-            top: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 999;
-        }
-  
+
         h1 {
             color: #333;
         }
+
         .game {
-            border: 1px solid #ccc;
+            background-color: #333;
             border-radius: 5px;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #f9f9f9;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center; /* Center horizontally */
         }
+
+        .game:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
         .game h2 {
-            color: #555;
+            color: #fff;
         }
+
         .game p {
-            color: #777;
+            color: #ccc;
         }
 
         .play-button {
             padding: 12px 24px;
             cursor: pointer;
             font-family: 'Calibri', sans-serif;
-            font-size: 28px;
+            font-size: 18px;
             user-select: none;
             color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 5px rgba(255, 255, 255, 0.5);
-            color: #ffffff;
             text-decoration: none;
-            font-size: 18px;
-            animation: fadeIn 2s ease-in-out forwards;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 5px rgba(255, 255, 255, 0.5);
+            background-color: #555;
             border: 2px solid gray;
-            background-color: gray;
             border-radius: 5px;
             transition: transform 0.3s, filter 0.3s, background-color 0.3s, color 0.3s;
-            margin-right: 20px;
         }
 
         .play-button:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
-            user-select: none;
-            background-color: #555;
-            color: #fff;
+            background-color: #333;
+        }
+
+        .icon-container {
+            margin-top: 50px;
         }
 
         .icon-button {
@@ -85,17 +82,15 @@
 
         .icon-button:hover svg {
             transform: scale(1.2);
-            transition: transform 0.3s;
         }
 
-        .icon-container:hover .icon-button {
+        .icon-container:hover .icon {
             transform: scale(1.2);
             filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
-            transition: transform 0.3s, filter 0.3s;
         }
 
         .icon-button svg {
-            width: 40px; 
+            width: 40px;
             height: 40px;
             transition: transform 0.3s;
         }
@@ -103,7 +98,7 @@
         .icon-button svg path {
             stroke: white;
         }
-        
+
         .icon-button a {
             text-decoration: none;
             pointer-events: none;
@@ -112,7 +107,7 @@
 </head>
 <body>
     <div class="icon-container">
-        <a href="https://bleafy.github.io/" class="icon-button">
+        <a href="https://bleafy.github.io/games/retrobowl" target="_blank" class="icon-button">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
                 <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z" fill="white"></path>
             </svg>
@@ -127,7 +122,7 @@
         <div class="game">
             <h2>Slope</h2>
             <p>Slope Game is a fantastic speed run game where you can drive a ball rolling on tons of slopes and obstacles. See how far you can go in this endless course.</p>
-            <a href="https://www.google.com" class="play-button">Play</a>
+            <a href="https://slope.lebrohnjahames.repl.co/" class="play-button">Play</a>
         </div>
         <div class="game">
             <h2>2048</h2>
