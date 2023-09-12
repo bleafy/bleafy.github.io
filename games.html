@@ -69,7 +69,7 @@
             transform: scale(1.2);
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
             user-select: none;
-            background-color: #555; /* Changed color on hover */
+            background-color: #555;
             color: #fff;
         }
 
@@ -89,13 +89,13 @@
 
         .icon-button:hover svg {
             transform: scale(1.2);
-            transition: transform 0.3s; /* Added transition for smoother scaling */
+            transition: transform 0.3s;
         }
 
         .icon-container:hover .icon-button {
             transform: scale(1.2);
             filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
-            transition: transform 0.3s, filter 0.3s; /* Added transition for smoother scaling and filter */
+            transition: transform 0.3s, filter 0.3s;
         }
 
         .icon-button svg {
@@ -139,5 +139,12 @@
             <a href="https://www.google.com" class="play-button">Play</a>
         </div>
     </div>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.ctrlKey && event.key === "q") {
+                window.location.href = "chrome://newtab";
+            }
+        });
+    </script>
 </body>
 </html>
