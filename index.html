@@ -74,9 +74,29 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 5px rgba(255, 255, 255, 0.5);
             margin-bottom: 20px;
         }
+        
+        .announcement-bar {
+                background-color: #f44336;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+            }
+    
+            .close-button {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                cursor: pointer;
+                color: #fff;
+                font-size: 20px;
+            }
     </style>
 </head>
 <body>
+    <div class="announcement-bar">
+        <span id="announcement-text">Press Z On Any Page To Get Redirected To A New Tab.</span>
+        <span class="close-button" id="close-announcement">×</span>
+    </div>
     <h1>🍃 Leafys 🍂</h1>
     <h1>MOTD: The only person stoping you is you so keep on going.</h1>
     
@@ -85,6 +105,10 @@
         <button class="category-button" id="unblockers-link">Unblockers</button>   
     </div>
   <script>
+        document.getElementById("close-announcement").addEventListener("click", function() {
+            var announcementBar = document.querySelector(".announcement-bar");
+            announcementBar.style.display = "none";
+        });
         document.getElementById("games-link").addEventListener("click", function(event) {
             event.preventDefault();
             window.location.href = "https://bleafy.github.io/games";
