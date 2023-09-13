@@ -19,14 +19,38 @@
 <body>
     <iframe src="https://ovolve.github.io/2048-AI/" frameborder="0"></iframe>
 
-<a id="myLink" href="https://google.com" class="icon-button"></a>
+    <a id="myLink" href="https://google.com" class="icon-button"></a>
+
     <script>
         document.addEventListener("keydown", function(event) {
-            if (event.key.toLowerCase() === "z") {
+            if (event.key.toLowerCase() === "w") {
+                var arrowUpEvent = new KeyboardEvent("keydown", {
+                    key: "ArrowUp",
+                });
+                document.dispatchEvent(arrowUpEvent);
+            }
+            else if (event.key.toLowerCase() === "a") {
+                var arrowLeftEvent = new KeyboardEvent("keydown", {
+                    key: "ArrowLeft",
+                });
+                document.dispatchEvent(arrowLeftEvent);
+            }
+            else if (event.key.toLowerCase() === "s") {
+                var arrowDownEvent = new KeyboardEvent("keydown", {
+                    key: "ArrowDown",
+                });
+                document.dispatchEvent(arrowDownEvent);
+            }
+            else if (event.key.toLowerCase() === "d") {
+                var arrowRightEvent = new KeyboardEvent("keydown", {
+                    key: "ArrowRight",
+                });
+                document.dispatchEvent(arrowRightEvent);
+            }
+            else if (event.key.toLowerCase() === "z") {
                 window.location.href = document.getElementById("myLink").href;
             }
         });
     </script>
 </body>
 </html>
-
