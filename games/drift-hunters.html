@@ -19,6 +19,7 @@
             background-color: #121212;
             color: #fff;
             display: flex;
+            font-family: Arial, sans-serif;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -41,12 +42,13 @@
 
         .warning-text {
             color: #fff;
+            font-family: Arial, sans-serif;
         }
 
         .continue-button {
             padding: 12px 24px;
             cursor: pointer;
-            font-family: 'Calibri', sans-serif;
+            font-family: Arial, sans-serif;
             font-size: 18px;
             user-select: none;
             color: #fff;
@@ -68,8 +70,8 @@
 <body>
     <div class="warning-container">
         <div class="warning-box">
-            <h1>Warning!</h1>
-            <p class="warning-text">This game does not support quick switch.</p>
+            <h1>🚨 Warning! 🚨</h1>
+            <p class="warning-text">This game does support quick switch but often fails, use CTRL + W if pressing z doesnt work.</p>
             <button class="continue-button" onclick="continueGame()">Continue</button>
         </div>
     </div>
