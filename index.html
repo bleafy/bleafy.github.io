@@ -15,7 +15,8 @@
     
     <div class="categories">
         <button class="category-button" id="games-link">Games</button>
-        <button class="category-button" id="unblockers-link">Unblockers</button>   
+        <button class="category-button" id="unblockers-link">Unblockers</button>  
+        <button class="category-button" id="request-link">Request Update/Games</button>   
     </div>
   <script>
         document.getElementById("close-announcement").addEventListener("click", function() {
@@ -31,8 +32,14 @@
             event.preventDefault(); 
             window.location.href = "https://bleafy.github.io/unblockers";
         });
+
+       document.getElementById("request-link").addEventListener("click", function(event) {
+            event.preventDefault(); 
+            window.location.href = "https://bleafy.github.io/forms";
+        });
     </script>
 
+    
 <a id="myLink" href="https://google.com" class="icon-button"></a>
     <script>
         document.addEventListener("keydown", function(event) {
