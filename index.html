@@ -17,7 +17,9 @@
         <button class="category-button" id="games-link">Games</button>
         <button class="category-button" id="unblockers-link">Unblockers</button>   
     </div>
-  <script>
+
+    <a id="myLink" href="https://google.com" class="icon-button"></a>
+    <script>
         document.getElementById("close-announcement").addEventListener("click", function() {
             var announcementBar = document.querySelector(".announcement-bar");
             announcementBar.style.display = "none";
@@ -30,15 +32,6 @@
         document.getElementById("unblockers-link").addEventListener("click", function(event) {
             event.preventDefault(); 
             window.location.href = "https://bleafy.github.io/unblockers";
-        });
-    </script>
-
-<a id="myLink" href="https://google.com" class="icon-button"></a>
-    <script>
-        document.addEventListener("keydown", function(event) {
-            if (event.key.toLowerCase() === "z") {
-                window.location.href = document.getElementById("myLink").href;
-            }
         });
     </script>
 </body>
