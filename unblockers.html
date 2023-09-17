@@ -6,20 +6,30 @@
     <title>Leafy's</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Calibri', sans-serif;
             background-color: #121212;
             color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
-            position: relative;
+            padding: 0;
+            overflow: hidden;
         }
 
-        h1 {
-            color: #333;
+        .header {
+            background-color: #333;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
 
         .game {
@@ -28,13 +38,10 @@
             padding: 20px;
             margin: 20px 0;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-align: center; 
-        }
-
-        .game:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: calc(30% - 40px);
+            height: 300px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
         .game h2 {
@@ -68,6 +75,7 @@
 
         .icon-container {
             margin-top: 50px;
+            text-align: center;
         }
 
         .icon-button {
@@ -98,11 +106,6 @@
         .icon-button svg path {
             stroke: white;
         }
-
-        .icon-button a {
-            text-decoration: none;
-            pointer-events: none;
-        }
     </style>
 </head>
 <body>
@@ -116,10 +119,12 @@
     <div class="container">
         <div class="game">
             <h2>AVG Browser</h2>
-            <p>To install goto https://bit.ly/DownnIoad and download the browser. Open it, Download it, find the AVG browser exe, then goto the this exention, https://bit.ly/VPNs and add the exention. Once you add it go to your exentions and click on it, connect to the default selected country, once you connect go back and make sure its connected, if it still says connected you are good to go, if its not connected then you must click connect again and check again. Out of time? remove the exention and re add it.</p>
+            <p>To install, go to <a href="https://bit.ly/DownnIoad">https://bit.ly/DownnIoad</a> and download the browser. Open it, download it, find the AVG browser exe, then go to this extension, <a href="https://bit.ly/VPNs">https://bit.ly/VPNs</a>, and add the extension. Once you add it, go to your extensions and click on it, connect to the default selected country. Once you connect, go back and make sure it's connected. If it still says connected, you are good to go. If it's not connected, then you must click connect again and check again. Out of time? Remove the extension and re-add it.</p>
             <a href="https://bit.ly/DownnIoad" class="play-button">Install AVG Browser</a>
-          <a href="https://bit.ly/VPNs" class="play-button">Install Extention</a>
-<a id="myLink" href="https://google.com" class="icon-button"></a>
+            <a href="https://bit.ly/VPNs" class="play-button">Install Extension</a>
+            <a id="myLink" href="https://google.com" class="icon-button"></a>
+        </div>
+    </div>
     <script>
         document.addEventListener("keydown", function(event) {
             if (event.key.toLowerCase() === "z") {
