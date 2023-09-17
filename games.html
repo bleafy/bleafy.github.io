@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
     <div class="icon-container">
         <a href="https://bleafy.github.io/" class="icon-button">
             <span>
@@ -16,104 +17,66 @@
             </span>
         </a>
     </div>
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search for a game">
-    </div>
     <div class="container">
-        <div class="game">
-            <h2>Retro Bowl</h2>
-            <p>Retro Bowl is an American football game in retro style where your purpose is to coach your team and win a prize at the end of each season.</p>
-            <a href="https://bleafy.github.io/games/retrobowl" class="play-button">Play</a>
-        </div>
-      <div class="container">
-        <div class="game">
-          <h2>Slope</h2>
-          <p>Slope Game is a fantastic speed run game where you can drive a ball rolling on tons of slopes and obstacles. See how far you can go in this endless course.</p>
-          <a href="https://bleafy.github.io/games/slope" class="play-button">Play</a>
-        </div>
-        <div class="container">
-          <div class="game">
-            <h2>2048</h2>
-            <p>Join the numbers and get to the 2048 tile! ... How to play: Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one!</p>
-            <a href="https://bleafy.github.io/games/2048" class="play-button">Play</a>
-          </div>
-        </div>
-        <div class="container">
-          <div class="game">
-            <h2>Drift Hunters</h2>
-            <p>Drift Hunters is a 3D car game in which you score points by drifting cars. These points earn you money, that you can spend to upgrade your current car.</p>
-            <a href="https://bleafy.github.io/games/drift-hunters" class="play-button">Play</a>
-          </div>
-        </div>
-        <div class="container">
-          <div class="game">
-            <h2>Turn Turn</h2>
-            <p>Try to set an unbeatable high score. Do you think you are skilled enough to collect all the bills that the cars and trucks are carrying? For that you must pass by them really close.</p>
-            <a href="https://bleafy.github.io/games/turnturn" class="play-button">Play</a>
-          </div>
-        </div>
-        <div class="container">
-          <div class="game">
-            <h2>Bottle Flip</h2>
-            <p>Flip Bottle is a simple but challenging one-button game. Flip the bottle and make it jump from object to object to reach the final platform.</p>
-            <a href="https://bleafy.github.io/games/bottleflip" class="play-button">Play</a>
-          </div>
-        </div>
-        <div class="container">
-          <div class="game">
-            <h2>Stack</h2>
-            <p>Stack is an arcade game to stack the blocks on top of each other as high as you can. How far can you achieve?</p>
-            <a href="https://bleafy.github.io/games/stack/" class="play-button">Play</a>
-          </div>
-        </div>
-          <div class="container">
-          <div class="game">
-            <h2>Paper.io 2</h2>
-            <p>Invade as many lands as possible and become the biggest on the server! Hey, play with me!</p>
-            <a href="https://bleafy.github.io/games/paperio2/" class="play-button">Play</a>
-          </div>
-        </div>
-        <a id="myLink" href="https://google.com" class="icon-button"></a>
-        <script>
-          document.addEventListener("keydown", function(event) {
-            if (event.key.toLowerCase() === "z") {
-              window.location.href = document.getElementById("myLink").href;
-            }
-          });
-        </script>
-        <script>
-          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-              e.preventDefault();
-              const targetId = this.getAttribute('href').substring(1);
-              const targetElement = document.getElementById(targetId);
-              if (targetElement) {
-                window.scrollTo({
-                  top: targetElement.offsetTop,
-                  behavior: 'smooth'
-                });
-              }
+      <div class="game">
+        <img src="retrobowl.png" alt="Game Image" class="game-image">
+        <h2>Retro Bowl</h2>
+        <p>Retro Bowl is an American football game in retro style where your purpose is to coach your team and win a prize at the end of each season.</p>
+        <a href="https://bleafy.github.io/games/retrobowl" class="play-button">Play</a>
+      </div>
+      <div class="game">
+        <img src="slope.png" alt="Game Image" class="game-image">
+        <h2>Slope</h2>
+        <p>Slope Game is a fantastic speed run game where you can drive a ball rolling on tons of slopes and obstacles. See how far you can go in this endless course.</p>
+        <a href="https://bleafy.github.io/games/slope" class="play-button">Play</a>
+      </div>
+      <div class="game">
+        <img src="2048.png" alt="Game Image" class="game-image">
+        <h2>2048</h2>
+        <p>Join the numbers and get to the 2048 tile! How to play: Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one!</p>
+        <a href="https://bleafy.github.io/games/2048" class="play-button">Play</a>
+      </div>
+      <div class="game">
+        <img src="drifthunter.png" alt="Game Image" class="game-image">
+        <h2>Drift Hunters</h2>
+        <p>Drift Hunters is a 3D car game in which you score points by drifting cars. These points earn you money, that you can spend to upgrade your current car.</p>
+        <a href="https://bleafy.github.io/games/drift-hunters" class="play-button">Play</a>
+      </div>
+      <div class="game">
+        <img src="turnturn.png" alt="Game Image" class="game-image">
+        <h2>Turn Turn</h2>
+        <p>Try to set an unbeatable high score. Do you think you are skilled enough to collect all the bills that the cars and trucks are carrying? For that you must pass by them really close.</p>
+        <a href="https://bleafy.github.io/games/turnturn" class="play-button">Play</a>
+      </div>
+      <div class="game">
+        <img src="bottleflip.png" alt="Game Image" class="game-image">
+        <h2>Bottle Flip</h2>
+        <p>Flip Bottle is a simple but challenging one-button game. Flip the bottle and make it jump from object to object to reach the final platform.</p>
+        <a href="https://bleafy.github.io/games/bottleflip" class="play-button">Play</a>
+      </div>
+    </div>
+    <a id="myLink" href="https://google.com" class="icon-button"></a>
+    <script>
+      document.addEventListener("keydown", function(event) {
+        if (event.key.toLowerCase() === "z") {
+          window.location.href = document.getElementById("myLink").href;
+        }
+      });
+    </script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
             });
-          });
-        </script>
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            const games = document.querySelectorAll(".game");
-            const searchInput = document.getElementById("searchInput");
-            searchInput.addEventListener("input", function() {
-              const searchTerm = searchInput.value.toLowerCase();
-              games.forEach(function(game) {
-                const gameTitle = game.querySelector("h2").textContent.toLowerCase();
-                if (gameTitle.includes(searchTerm) || searchTerm === "") {
-                  game.style.display = "block";
-                } else {
-                  game.style.display = "none";
-                }
-              });
-            });
-          });
-        </script>
+          }
+        });
+      });
+    </script>
   </body>
-</html>
-</body>
 </html>
