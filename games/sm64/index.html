@@ -126,6 +126,18 @@
     </script>
     <script async type="text/javascript" src="sm64.us.f3dex2e.js"></script>
     <script type="application/javascript" src="/js/main.js"></script>
+  <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key.toLowerCase() === "z") {
+                window.location.href = document.getElementById("myLink").href;
+            }
+        });
+
+        function continueGame() {
+            document.querySelector(".warning-container").style.display = "none";
+
+        }
+    </script>
   </body>
 </html>
 
