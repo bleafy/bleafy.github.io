@@ -92,18 +92,18 @@ body {
         .change-log {
             margin-top: 30px;
             padding: 20px;
-            background-color: #121212; /* Match your site's background color */
-            border: 2px solid #61dafb;
+            background-color: #121212;
+            border: 2px solid ##33333;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            text-align: center; /* Center the text */
-            position: relative; /* For animation */
+            text-align: center; 
+            position: relative; 
         }
         
         .change-log h2 {
             font-size: 1.5rem;
             color: #61dafb;
-            text-transform: uppercase; /* Uppercase text */
+            text-transform: uppercase;
         }
         
         .change-log ul {
@@ -114,10 +114,9 @@ body {
         .change-log li {
             margin-top: 10px;
             font-size: 1rem;
-            color: #ffffff; /* Text color */
+            color: #ffffff;
         }
         
-        /* Glowing effect */
         .change-log::before {
             content: "";
             position: absolute;
@@ -126,7 +125,7 @@ body {
             right: 0;
             bottom: 0;
             border-radius: 10px;
-            background: radial-gradient(circle, #61dafb 0%, transparent 70%);
+            background: radial-gradient(circle, #333333 0%, transparent 70%);
             opacity: 0;
             animation: glow 3s linear infinite;
         }
@@ -146,9 +145,8 @@ body {
             }
         }
         
-        /* Random animation */
         .change-log:hover {
-            animation: shake 0.5s ease infinite; /* Add a shaking animation on hover */
+            animation: shake 0.5s ease infinite;
         }
         
         @keyframes shake {
