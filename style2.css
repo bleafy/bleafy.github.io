@@ -102,7 +102,7 @@ body {
         
         .change-log h2 {
             font-size: 1.5rem;
-            color: #61dafb;
+            color: #fff;
             font-family: Arial, sans-serif;
             text-transform: uppercase;
         }
@@ -115,7 +115,7 @@ body {
         .change-log li {
             margin-top: 10px;
             font-size: 1rem;
-            color: #61dafb;
+            color: #fff;
             font-family: Arial, sans-serif;
         }
         
